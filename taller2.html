@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 2</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a  href="index.html">Inicio</a></li>
+            <li><a href="taller1.html">Taller#1</a></li>
+            <li><a href="taller2.html">Taller#2</a></li>
+            <li><a href="taller3.html">Taller#3</a></li>
+            <li><a href="taller4.html">Taller#4</a></li>
+            <li><a href="taller5.html">Taller#5</a></li>
+            <li><a href="tallerjava.html">Taller de Java</a></li>
+            <li><a href="tallerHTML5.html">Taller HTML5</a></li>
+            <li><a href="tallerCSS.html">Taller CSS</a></li>
+            <li><a href="tallerjavascript.html">Taller JavaScript</a></li>
+          </ul>
+    </nav>
+      <h5>Taller de Condicionales</h5>
+      
+     <p class="texto" >
+        <b>1.</b>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad. <br><br>
+     </p>
+     <pre>
+   Proceso Ejercicio_1
+    Definir Edad Como Entero;
+    Escribir "Ingrese su edad";
+    Leer Edad;
+    Si Edad >= 18 Entonces
+    Escribir "Usted es mayor de edad.";
+    FinSi
+   FinProceso
+     </pre>
+<br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>2.</b>Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).<br><br>
+</p>
+<pre>
+   Proceso Ejercicio_2
+	Definir Edad Como Entero;
+	Escribir "Ingrese su edad";
+	Leer Edad;
+	Si Edad < 18 Entonces
+		Escribir "Usted aún es un niño(a).";
+	FinSi
+   FinProceso
+</pre>
+<br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>3.</b>Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.<br><br>
+</p>
+<pre>
+   Proceso Ejercicio_3
+	Definir Edad Como Entero;
+	Definir Nombre Como Caracter;
+	Definir Apellidos Como Caracter;
+	Escribir "Ingrese su nombre";
+	Leer Nombre;
+	Escribir "Ingrese sus apellidos";
+	Leer Apellidos;
+	Escribir "Ingrese su edad";
+	Leer Edad;
+	Si Edad >= 18 Entonces
+		Escribir Nombre," ",Apellidos, " usted es mayor de edad,por lo tanto puede entrar a la fiesta.";
+	SiNo
+		Escribir Nombre," ",Apellidos, " usted es menor de edad,por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.";
+	FinSi
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>4.</b> La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película. <br><br>
+</p>
+<pre>
+   Proceso Ejercicio_4
+	Definir Servicio Como Entero;
+	Definir Pelicula_alquilada Como Caracter;
+	Definir Pelicula_entergada Como Caracter;
+	Definir Observacion Como Caracter;
+	
+	Escribir "Alquiler de películas Barrio el Porvenir ";
+	Escribir " ";
+	Escribir "Seleccione el servicio que desea tomar:";
+	Escribir "1. Alquilar película";
+	Escribir "2. Consultar películas disponibles";
+	Escribir "3. Recibir película ";
+	Leer Servicio;
+	
+	Segun Servicio Hacer
+		1:
+			Escribir "Ingrese el nombre de la película que desea alquilar";
+			Leer Pelicula_alquilada;
+			Escribir ".............Procesando .............";
+			Escribir "Película alquilada con exito";
+		2:	
+			Escribir "Las películas disponibles son:";
+			Escribir "1....Capitán América: El primer vengador (Joe Johnston, 2011)";
+			Escribir "2....Capitana Marvel (Anna Boden y Ryan Fleck, 2019)";
+			Escribir "3....Iron Man (Jon Favreau, 2008)";
+			Escribir "4....Iron Man 2 (Jon Favreau, 2010)";
+			Escribir "5....El increíble Hulk (Louis Leterrier, 2008)";
+			Escribir "6....Thor (Kenneth Branagh, 2011)";
+			Escribir "7....Los Vengadores (Joss Whedon, 2012)";
+			Escribir "8....Iron Man 3 (Shane Black, 2013)";
+			Escribir "9....Thor: El mundo oscuro (Alan Taylor, 2013)";
+			Escribir "10...Capitán América: El Soldado de Invierno (Anthony y Joe Russo, 2014)";
+		3:
+			Escribir "Ingrese el nombre de la pelicula que está entregando";
+			Leer Pelicula_entergada;
+			Escribir "La película presenta alguna observación?";
+			Leer Observacion;
+		De Otro Modo:
+			Escribir "Opcion incorrecta intente de nuevo";
+	FinSegun
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>5.</b> La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten. <br><br>
+</p>
+<pre>
+   Proceso Ejercicio_5
+	
+	Definir Servicio Como Entero;
+	Definir Producto_comprado Como Caracter;
+	Definir Producto_devuelto Como Caracter;
+	Definir Observacion Como Caracter;
+	
+	Escribir "Drogueria Mi Salud ";
+	Escribir " ";
+	Escribir "Seleccione el servicio que desea tomar:";
+	Escribir "1. Compra de producto";
+	Escribir "2. Consulta de precios por producto";
+	Escribir "3. Devolución de productos ";
+	Leer Servicio;
+	
+	Segun Servicio Hacer
+		1:
+			Escribir "Ingrese el nombre del producto";
+			Leer Producto_comprado;
+			Escribir ".............Procesando .............";
+			Escribir "Producto vendido";
+		2:	
+			Escribir "Los productos disponibles son:";
+			Escribir "1....Dolex Gripa  ($11.650)";
+			Escribir "2....Noxpirin Plus ($5.780)";
+			Escribir "3....Naproxeno Genfar ($6.460)";
+			Escribir "4....Vita C Mk Fresa ($17.650)";
+			Escribir "5....Acetaminofén Genfar 500Mg ($1.600)";
+			Escribir "6....Aspirina 100Mg ($13.600)";
+			Escribir "7....Apronax 275Mg ($35.000)";
+			Escribir "8....X Ray Gel 1% ($21.700)";
+			Escribir "9....Lumbal 220Mg ($14.240)";
+			Escribir "10...Doloran Pomada Lata ($10.150)";
+		3:
+			Escribir "Ingrese el nombre del producto que desea devolver";
+			Leer Producto_devuelto;
+			Escribir "Motivo de la devolución?";
+			Leer Observacion;
+		De Otro Modo:
+			Escribir "Opcion incorrecta intentelo nuevamente";
+	FinSegun
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>6.</b> El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.<br><br>
+</p>
+<pre>
+   Proceso Ejercicio_6
+	Definir Servicio Como Entero;
+	Definir Placa Como Caracter;
+	Definir Hora_ingreso,salida Como Caracter;
+	Definir Motivo,Novedades Como Caracter;
+	
+	Escribir "Taller de motos El Maquinista";
+	Escribir " ";
+	Escribir "Seleccione el servicio que desea tomar:";
+	Escribir "1. Registro de ingreso";
+	Escribir "2. Registro de salida";
+	Escribir "3. Arreglos realizados";
+	Leer Servicio;
+	
+	Segun Servicio Hacer
+		1:
+			Escribir "Ingrese la placa del vehiculo";
+			Leer Placa;
+			Escribir "Ingrese la hora de ingreso:";
+			Leer Hora_ingreso;
+			Escribir "Ingrese el motivo de ingreso";
+			Leer Motivo;
+		2:	
+			Escribir "Ingrese la placa del vehiculo";
+			Leer Placa;
+			Escribir "Ingrese la hora de salida:";
+			Leer Hora_salida;
+			Escribir "Ingrese las novedades";
+			Leer Novedades;
+		3:
+			Escribir "Arreglos Realizados: ";
+			Escribir "Cambio de Correa ";
+			Escribir "Cambio de Aceite ";
+			Escribir "Reparacion de Motor ";
+			Escribir "Instalacion de Luz ";
+			Escribir "Reemplazo de Neumatico ";
+		De Otro Modo:
+			Escribir "Opcion incorrecta intentelo nuevamente";
+	FinSegun
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>7.</b> La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).<br><br>
+</p>
+<pre>
+    Proceso Ejercicio_7
+	Definir Peso Como Entero;
+	Definir Estatura Como Real;
+	Definir Nombre Como Caracter;
+	Definir Apellidos Como Caracter;
+	Definir IMC como Real;
+	Definir Rango Como Caracter;
+	
+	
+	Definir Placa Como Caracter;
+	Definir Hora_ingreso Como Caracter;
+	Definir Motivo Como Caracter;
+	
+	Escribir "Calculadora de IMC Secretaría de Salud Municipal";
+	Escribir " ";
+	Escribir "Digite su nombre: ";
+	Leer Nombre;
+	Escribir "Digite sus apellidos";
+	Leer Apellidos;
+	Escribir "Digite su peso en kilogramos";
+	Leer Peso;
+	Escribir "Digite su estatura en metros";
+	Leer Estatura;
+	IMC <- (Peso)/(Estatura)^2;
+	
+	Si IMC < 18.5 Entonces
+		Rango <- "Bajo Peso";
+	SiNo
+		
+		Si IMC <= 24.9 Entonces
+			Rango <- "Normal";
+		SiNo
+			
+			Si IMC <= 29.9 Entonces
+				Rango <- "Sobrepeso";
+			SiNo
+				Rango <- "Obesidad";
+			FinSi
+		FinSi
+		
+	FinSi
+	
+
+	Limpiar Pantalla;
+	Escribir "Nombre: ",Nombre," ",Apellidos;
+	Escribir "Peso: ",Peso;
+	Escribir "Estatura: ",Estatura;
+	Escribir "IMC: ",IMC;
+	Escribir "Rango: ",Rango;
+FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>8.</b> El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.<br><br>
+</p>
+<pre>
+    Proceso Ejercicio_8
+	Definir Servicio Como Entero;
+	Definir Producto_comprado Como Caracter;
+	Definir Sabor_comprado Como Caracter;
+	Definir Porciones Como Caracter;
+	Definir Producto_vendido Como Caracter;
+	Definir Porciones_vendida Como Caracter;
+	Definir Descripcion_vendida,Descripcion_compra Como Caracter;
+	Escribir "Pasteleria Don Carlos";
+	Escribir " ";
+	Escribir "Seleccione el opcion que desea tomar:";
+	Escribir "1. Registrar pedido";
+	Escribir "2. Tortas disponibles";
+	Escribir "3. Registrar ventas ";
+	Leer Servicio;
+	Segun Servicio Hacer
+		1:
+			Escribir "Ingrese el sabor de la torta";
+			Leer Producto_comprado;
+			Escribir "Ingrese la cantidad de porciones";
+			Leer Porciones;
+			Escribir "Ingrese la descripcion de las decoraciones";
+			Leer Descripcion_compra;
+			Escribir ".............Procesando .............";
+			Escribir "Producto registrado";
+		2:	
+			Escribir "Las tortas disponibles son:";
+			Escribir "1....Torta de Zanahoria (8 porciones)";
+			Escribir "2....Torta de Zanahoria (20 porciones)";
+			Escribir "3....Torta de Naranja (10 porciones)";
+			Escribir "4....Torta de Vainilla (30 porciones)";
+			Escribir "5....Torta de Chocolate (45 porciones)";
+		3:
+			Escribir "Ingrese el sabor de la torta";
+			Leer Producto_vendido;
+			Escribir "Ingrese la cantidad de porciones";
+			Leer Porciones_vendida;
+			Escribir "Ingrese la descripcion de las decoraciones";
+			Leer Descripcion_vendida;
+			Escribir ".............Procesando .............";
+			Escribir "Venta registrada";
+		De Otro Modo:
+			Escribir "Opcion incorrecta intentelo nuevamente";
+	FinSegun
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>9.</b> El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado.<br><br>
+</p>
+<pre>
+   Proceso Ejercicio_9
+	Definir Seleccion Como Entero;
+	
+	Definir Base Como Real;
+	Definir Altura Como Real;
+	Definir BaseT Como Real;
+	Definir Area Como Real;
+	
+	
+	
+	
+	Escribir "Calculadora de Area";
+	Escribir " ";
+	Escribir "Seleccione el opcion que desea tomar:";
+	Escribir "1. Calcular el área de un rectángulo";
+	Escribir "2. Calcular el área de un tríangulo";
+	Escribir "3. Calcular el área de un trapecio ";
+	Leer Seleccion;
+	
+	Segun Seleccion Hacer
+		1:
+			Escribir "Ingrese la Base del rectángulo";
+			Leer Base;
+			Escribir "Ingrese la Altura del rectángulo";
+			Leer Altura;
+			Escribir "El area del rectángulo es: ";
+			Area <- Base*Altura;
+			Escribir Area;
+			
+		2:	
+			Escribir "Ingrese la Base del triángulo";
+			Leer Base;
+			Escribir "Ingrese la Altura del triángulo";
+			Leer Altura;
+			Escribir "El area del triángulo es: ";
+			Area <- (Base*Altura)/2;
+			Escribir Area;
+		3:
+			Escribir "Ingrese la Base 1 del trapecio";
+			Leer Base;
+			Escribir "Ingrese la Base 2 del trapecio";
+			Leer BaseT;
+			Escribir "Ingrese la Altura del trapecio";
+			Leer Altura;
+			Escribir "El area del trapecio es: ";
+			Area <- ((Base+BaseT)*Altura)/2;
+			Escribir Area;
+			
+		De Otro Modo:
+			Escribir "Opcion incorrecta intentelo nuevamente";
+	FinSegun
+   FinProceso
+</pre> 
+<br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>10.</b> El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta.<br><br>
+</p>
+<pre>
+   Proceso Ejercicio_10
+	Definir saldo Como Entero;
+	Definir Seleccion Como Entero;
+	Definir Numero_cuenta Como Caracter;
+	Definir deposito Como Entero;
+	Definir retiro como Entero;
+	Escribir "Banco Su banco fiel";
+	Escribir " ";
+	Escribir "Digite el nombre del titular de la cuenta:";
+	Leer Numero_cuenta;
+	Escribir "Seleccione el servicio que desea tomar:";
+	Escribir "1. Ingresos";
+	Escribir "2. Retiros";
+	Escribir "3. Consultas de valor ";
+	saldo <- 500000;
+	Leer Seleccion;
+	Segun Seleccion Hacer
+		1:
+			Escribir "Ingrese la Cantidad a Ingresar";
+			Leer deposito;
+			Si deposito < 0 Entonces
+				Escribir " ERR0R.  Ingrese un valor positivo";
+			SiNo
+				saldo <- deposito+saldo;
+				Escribir "Su nuevo saldo de cuenta es :";
+				Escribir "$ ",saldo;
+			FinSi
+		2:	
+			Escribir "Ingrese la Cantidad a Retirar";
+			Leer retiro;
+			Si retiro < 0 Entonces
+				Escribir " ERR0R.  Ingrese un valor positivo";
+			SiNo
+				saldo <- saldo-retiro;
+				Escribir "Su nuevo saldo de cuenta es :";
+				Escribir "$ ",saldo;
+			FinSi
+		3:
+			Escribir "El saldo de su cuenta es: ";
+			Escribir "$ ",saldo;
+		De Otro Modo:
+			Escribir "Opcion incorrecta intentelo nuevamente";
+	FinSegun
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<p class="texto">
+    Adicionalmente en este video se puede ver el funcionamiento de los ejercicios explicado en video. <br>
+</p>
+<div class="video"><iframe class="multimedia" width="420" height="315" src="https://www.youtube.com/embed/NQKfjuSJieM?controls=0"
+    ></div>
+</iframe>
+<br><br>
+<a href="https://github.com/Stiven199/TalleresSofka/tree/taller2" target="_blank" rel="noopener noreferrer"  >
+	<div class="caja" ><button class="button button2" >Link repositorio</button>
+	</div>
+</a>
+
+</body>
+</html>

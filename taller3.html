@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 3</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a  href="index.html">Inicio</a></li>
+            <li><a href="taller1.html">Taller#1</a></li>
+            <li><a href="taller2.html">Taller#2</a></li>
+            <li><a href="taller3.html">Taller#3</a></li>
+            <li><a href="taller4.html">Taller#4</a></li>
+            <li><a href="taller5.html">Taller#5</a></li>
+            <li><a href="tallerjava.html">Taller de Java</a></li>
+            <li><a href="tallerHTML5.html">Taller HTML5</a></li>
+            <li><a href="tallerCSS.html">Taller CSS</a></li>
+            <li><a href="tallerjavascript.html">Taller JavaScript</a></li>
+          </ul>
+    </nav>
+
+      <h5>Taller de Ciclos</h5>
+      
+     <p class="texto" >
+        <b>1.</b>Realizar la siguiente figura por medio del ciclo Para. <br><br>
+        *<br>
+        **<br>
+        ***<br>
+        ****<br>
+        *****<br>
+        ******<br>
+        *******<br>
+        ********<br>
+        *********<br>
+        **********<br>
+        
+     </p>
+     <pre>
+    Proceso Ejercicio_1
+        Definir x Como Entero;
+        Definir c Como Caracter;
+        Definir d Como Caracter;
+        d<- "*";
+        c<- "";
+        Para x<-0 hasta 9 con paso 1 hacer
+            c <- Concatenar(c,d);
+            Escribir c;
+            
+        FinPara
+    FinProceso
+     </pre>
+<br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>2.</b>Realizar la siguiente figura por medio del ciclo Mientras - Hacer.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ****<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;******<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*******<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;********<br>
+&nbsp;&nbsp;&nbsp;*********<br>
+**********<br>
+</p>
+<pre>
+    Proceso Ejercicio_2
+	Definir contador Como Entero;
+	Definir contador2 Como Entero;
+	Definir contador3 Como Entero;
+	Definir Ciclo1 Como Entero;
+	Definir Ciclo2 Como Entero;
+	Definir incremento Como Entero;
+	Definir esp Como Caracter;
+	Definir ast Como Caracter;
+	contador <- 0;
+	contador2 <- 0;
+	contador3 <- 0;
+	Ciclo1 <- 9;
+	Ciclo2 <- 1;
+	incremento <- 1;
+	esp <- " ";
+	ast <- "*";
+	Mientras contador3 < 10 Hacer
+		contador <- 0;
+		contador2 <- 0;	
+	Mientras contador2 < Ciclo2 Hacer
+			Mientras contador < Ciclo1 Hacer
+				Escribir Sin Saltar esp;
+				contador <- contador + 1;
+			FinMientras
+			Escribir Sin Saltar  ast;
+			contador2 <- contador2 +1;
+		FinMientras
+		Escribir "";
+		Ciclo1 <- Ciclo1-1;
+		Ciclo2 <- Ciclo2+1;
+		contador3 <- contador3+1;
+	FinMientras	
+   FinProceso
+
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>3.</b>Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que.<br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *******<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*********<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***********<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*************<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***************<br>
+    &nbsp;&nbsp;&nbsp;*****************<br>
+    *******************<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;***<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*****<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*******<br><br>
+</p>
+<pre>
+    Proceso Ejercicio_3
+	Definir contador Como Entero;
+	Definir contador2 Como Entero;
+	Definir contador3 Como Entero;
+	Definir Ciclo1 Como Entero;
+	Definir Ciclo2 Como Entero;
+	Definir incremento Como Entero;
+	Definir esp Como Caracter;
+	Definir ast Como Caracter;
+	
+	contador <- 0;
+	contador2 <- 0;
+	contador3 <- 0;
+	Ciclo1 <- 10;
+	Ciclo2 <- 1;
+	incremento <- 1;
+	esp <- " ";
+	ast <- "*";
+	Repetir
+		Repetir 
+			Si Ciclo1 = 0 Entonces
+				contador <- 0;
+			SiNo
+				Escribir Sin Saltar esp;
+				contador <- contador + 1;
+			FinSi
+		Hasta Que contador >= Ciclo1
+		Repetir
+		Escribir Sin Saltar ast;
+		contador2 <- contador2 +1;
+		
+		Hasta Que contador2 >= Ciclo2
+		Ciclo1 <- Ciclo1-1;
+		Ciclo2 <- Ciclo2+2;
+		contador <- 0;
+		contador2 <- 0;
+		Escribir "";
+		contador3 <- contador3 +1;
+  		Si Ciclo2 > 21 Entonces
+  			Ciclo1 <- 10;
+  			Ciclo2 <- 3;
+  		FinSi
+	Hasta Que contador3 >= 12
+	Ciclo1 <- 10;
+	Ciclo2 <- 3;
+	contador3 <- 0;
+	Repetir	
+		Repetir 
+			Si Ciclo1 = 0 Entonces
+				contador <- 0;
+			SiNo
+				Escribir Sin Saltar esp;
+				contador <- contador + 1;
+			FinSi
+		Hasta Que contador >= Ciclo1
+		Repetir
+			Escribir Sin Saltar ast;
+			contador2 <- contador2 +1;
+			
+		Hasta Que contador2 >= Ciclo2
+		Escribir "";
+		contador3 <- contador3+1;
+		contador <- 0;
+		contador2 <- 0;
+		Ciclo1 <- Ciclo1-1;
+		Ciclo2 <- Ciclo2+2;
+	Hasta Que contador3 > 2		
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>4.</b>Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5. <br><br>
+</p>
+<pre>
+    Proceso Ejercicio_4
+	Definir tabla Como Entero;
+	Definir resultado Como Entero;
+	Escribir "Bienvenido al generador de tablas de multiplicar";
+	Escribir "Ingrese el numero que desee para generar la tabla";
+	Leer tabla;
+	Definir contador Como Entero;
+	Para contador <- 1 Hasta 10 Con Paso 1 Hacer
+		resultado <- contador*tabla;
+		Escribir contador," x ",tabla," = ",resultado;
+	FinPara
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>5.</b> Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo. <br><br>
+</p>
+<pre>
+    Proceso Ejercicio_5
+	Definir salir Como Logico;
+	Definir seleccion Como Entero;
+	Definir Nombre Como Caracter;
+	Nombre <- "";
+	salir <- Falso;
+	Repetir
+		Escribir "";
+		Escribir "Menú de usuario";
+		Escribir "1. Captura nombre";
+		Escribir "2. Saludar persona";
+		Escribir "3. Salir del sistema";
+		Leer seleccion;
+		Segun seleccion Hacer
+			1:
+				Escribir "Escriba su nombre";
+				Leer Nombre;
+			2:
+				Si Nombre = "" Entonces
+					Escribir "Primero debe ingresar el nombre.";
+					
+				SiNo
+					Escribir "Hola ",Nombre," eres bienvenido(a).";
+				FinSi
+			3:
+				salir <- Verdadero;
+			De Otro Modo:
+				Escribir "VALOR INCORRECTO INTENTELO NUEVAMENTE";
+		FinSegun
+	Hasta Que salir = verdadero
+FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>6.</b> Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.<br><br>
+</p>
+<pre>
+    Proceso Ejercicio_6
+	Definir salir Como Logico;
+	Definir seleccion Como Entero;
+	Definir consulta como entero;
+	Definir Nombre_1 Como Caracter;
+	Definir Telefono_1 Como Caracter;
+	Definir Organizacion_1 Como Caracter;
+	Definir Nombre_2 Como Caracter;
+	Definir Telefono_2 Como Caracter;
+	Definir Organizacion_2 Como Caracter;
+	Definir Nombre_3 Como Caracter;
+	Definir Telefono_3 Como Caracter;
+	Definir Organizacion_3 Como Caracter;
+	Definir contacto_1 Como Entero;
+	Definir contacto_2 Como Entero;
+	Definir contacto_3 Como Entero;
+	contacto_1<- 0;
+	contacto_2<- 0;
+	contacto_3<- 0;
+	Nombre_1 <- "";
+	Nombre_2 <- "";
+	Nombre_3 <- "";
+	Telefono_1 <- "";
+	Telefono_2 <- "";
+	Telefono_3 <- "";
+	salir <- Falso;
+	Repetir
+		Escribir "";
+		Escribir "Agenda telefonica";
+		Escribir "1. Añadir Contacto";
+		Escribir "2. Buscar Contactos";
+		Escribir "3. Eliminar Contactos";
+		Escribir "4. Salir";
+		Leer seleccion;
+		Segun seleccion Hacer
+			1:
+				Si contacto_3 = 0 & contacto_1=1 & contacto_2=1 Entonces
+					Escribir "Escriba el nombre completo";
+					Leer Nombre_3;
+					Escribir "Escriba la organización";
+					Leer Organizacion_3;
+					contacto_3<-1;
+					Escribir "Escriba el teléfono";
+					Leer Telefono_3;
+					SI  Telefono_3 = Telefono_1 Entonces
+						Nombre_3 <- "";
+						Organizacion_3 <- "";
+						Telefono_3 <- "";
+						Escribir "Número invalido ya se encuentra registrado con otro número, registre nuevamente el contacto";
+						contacto_3<- 0;
+					FinSi
+					SI  Telefono_2 = Telefono_3 Entonces
+						Nombre_3 <- "";
+						Organizacion_3 <- "";
+						Telefono_3 <- "";
+						Escribir "Número invalido ya se encuentra registrado con otro número, registre nuevamente el contacto";
+						contacto_3<- 0;	
+					FinSi
+				FinSi
+				Si contacto_2 = 0 & contacto_1 = 1 Entonces		
+					Escribir "Escriba el nombre completo";
+					Leer Nombre_2;
+					Escribir "Escriba la organización";
+					Leer Organizacion_2;
+					Escribir "Escriba el teléfono";
+					Leer Telefono_2;
+					contacto_2<-1;
+					SI Telefono_2 = Telefono_1   Entonces
+						Nombre_2 <- "";
+						Organizacion_2 <- "";
+						Telefono_2 <- "";
+						Escribir "Número invalido ya se encuentra registrado con otro número, registre nuevamente el contacto";
+						contacto_2<- 0;		
+					FinSi
+					SI Telefono_2 = Telefono_3   Entonces
+						Nombre_2 <- "";
+						Organizacion_2 <- "";
+						Telefono_2 <- "";
+						Escribir "Número invalido ya se encuentra registrado con otro número, registre nuevamente el contacto";
+						contacto_2<- 0;
+					FinSi	
+				FinSi
+				Si contacto_1 = 0 Entonces	
+					Escribir "Escriba el nombre completo";
+					Leer Nombre_1;
+					Escribir "Escriba la organización";
+					Leer Organizacion_1;
+					contacto_1<-1;
+					Escribir "Escriba el teléfono";
+					Leer Telefono_1;
+					SI Telefono_1 = Telefono_2   Entonces
+						Nombre_1 <- "";
+						Organizacion_1 <- "";
+						Telefono_1 <- "";
+						Escribir "Número invalido ya se encuentra registrado con otro número, registre nuevamente el contacto";
+						contacto_1<- 0;		
+					FinSi
+					SI Telefono_1 = Telefono_3  Entonces
+						Nombre_1 <- "";
+						Organizacion_1 <- "";
+						Telefono_1 <- "";
+						Escribir "Número invalido ya se encuentra registrado con otro número, registre nuevamente el contacto";
+						contacto_1<- 0;			
+					FinSi		
+				FinSi	
+				Si contacto_3 = 1 & contacto_1 = 1 & contacto_2 = 1 Entonces
+					
+					Escribir "La agenda se encuentra llena";	
+				FinSi
+			2:
+				Escribir "Indique el contacto que desea consultar";
+				Escribir "1.Contacto 1";
+				Escribir "2.Contacto 2";
+				Escribir "3.Contacto 3";
+				Leer consulta;
+				Segun consulta Hacer
+					1:
+						Si Nombre_1 = "" Entonces
+							Escribir "Primero debe registrar el contacto.";		
+						SiNo
+							Escribir "Nombre: ", Nombre_1 ;
+							Escribir "Telefono: ",Telefono_1;
+							Escribir "Organizacion ", Organizacion_1;
+						FinSi
+					2:
+						Si Nombre_2 = "" Entonces
+							Escribir "Primero debe registrar el contacto.";
+							
+						SiNo
+							Escribir "Nombre: ", Nombre_2 ;
+							Escribir "Telefono: ",Telefono_2;
+							Escribir "Organizacion ", Organizacion_2;
+						FinSi
+					3:
+						Si Nombre_3 = "" Entonces
+							Escribir "Primero debe registrar el contacto.";	
+						SiNo
+							Escribir "Nombre: ", Nombre_3 ;
+							Escribir "Telefono: ",Telefono_3;
+							Escribir "Organizacion ", Organizacion_3;
+						FinSi
+					De Otro Modo:
+						Escribir "VALOR INCORRECTO SOLO HAY 3 CONTACTOS ALMACENADOS";
+				FinSegun
+			3:	
+				Escribir "Indique el contacto que desea eliminar";
+				Escribir "1.Contacto 1";
+				Escribir "2.Contacto 2";
+				Escribir "3.Contacto 3";
+				Leer consulta;
+				Segun consulta Hacer
+					1:
+						Si Nombre_1 = "" Entonces
+							Escribir "Primero debe registrar el contacto.";
+							
+						SiNo
+							Nombre_1 <- "";
+							Telefono_1<- "";
+							Organizacion_1 <-"";
+							Escribir "Contacto 1 correctamente eliminado.";
+						FinSi	
+					2:
+						Si Nombre_2 = "" Entonces
+							Escribir "Primero debe registrar el contacto.";
+							
+						SiNo
+							Nombre_2 <- "";
+							Telefono_2<- "";
+							Organizacion_2 <-"";
+							Escribir "Contacto 2 correctamente eliminado.";
+						FinSi
+					3:
+						Si Nombre_2 = "" Entonces
+							Escribir "Primero debe registrar el contacto.";	
+						SiNo
+							Nombre_2 <- "";
+							Telefono_2<- "";
+							Organizacion_2 <-"";
+							Escribir "Contacto 3 correctamente eliminado.";
+						FinSi
+					De Otro Modo:
+						Escribir "VALOR INCORRECTO SOLO HAY 3 CONTACTOS ALMACENADOS";
+				FinSegun	
+			4:
+				salir <- Verdadero;
+			De Otro Modo:
+				Escribir "VALOR INCORRECTO INTENTELO NUEVAMENTE";
+		FinSegun
+	Hasta Que salir = verdadero
+FinProceso
+
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>7.</b> El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.<br><br>
+</p>
+<pre>
+    Proceso Ejercicio_7
+	Definir seleccion Como Entero;
+	Definir placa1,placa2,placa3,placa4,placa5 Como Caracter;
+	Definir nombre1,nombre2,nombre3,nombre4,nombre5 Como Caracter;
+	Definir telefono1,telefono2,telefono3,telefono4,telefono5 Como Caracter;
+	Definir marca1,marca2,marca3,marca4,marca5 Como Caracter;
+	Definir consulta Como Caracter;
+	placa1 <-"";
+	placa2 <-"";
+	placa3 <-"";
+	placa4 <-"";
+	placa5 <-"";
+	nombre1 <- "";
+	nombre2 <- "";
+	nombre3 <- "";
+	nombre4 <- "";
+	nombre5 <- "";
+	telefono1 <-"";
+	telefono2 <-"";
+	telefono3 <-"";
+	telefono4 <-"";
+	telefono5 <-"";	
+	Repetir 	
+		Escribir "Bienvenidos al Parqueadero El guardian";
+		Escribir "Menú de usuario";
+		Escribir "1. Ingresar al parqueadero";
+		Escribir "2. Retirar del parqueadero";
+		Escribir "3. Consulta de vehiculos parqueados";
+		Escribir "4. Salir";
+		Leer seleccion;
+		Segun seleccion Hacer
+			1: 
+				Si ("" = placa1)  Entonces
+					Escribir "Digite la placa";
+					Leer placa1;
+					Escribir "Digite la marca del vehiculo";
+					Leer marca1;
+					Escribir "Digite el nombre del propietario";
+					Leer nombre1;
+					Escribir "Digite el número de telefono";
+					Leer telefono1;
+				SiNo
+					Si ("" = placa2)  Entonces
+						Escribir "Digite la placa";
+						Leer placa2;
+						Escribir "Digite la marca del vehiculo";
+						Leer marca2;
+						Escribir "Digite el nombre del propietario";
+						Leer nombre2;
+						Escribir "Digite el número de telefono";
+						Leer telefono2;
+					SiNo
+						Si ("" = placa3)  Entonces
+							Escribir "Digite la placa";
+							Leer placa3;
+							Escribir "Digite la marca del vehiculo";
+							Leer marca3;
+							Escribir "Digite el nombre del propietario";
+							Leer nombre3;
+							Escribir "Digite el número de telefono";
+							Leer telefono3;
+						SiNo
+							Si ("" = placa4)  Entonces
+								Escribir "Digite la placa";
+								Leer placa4;
+								Escribir "Digite la marca del vehiculo";
+								Leer marca4;
+								Escribir "Digite el nombre del propietario";
+								Leer nombre4;
+								Escribir "Digite el número de telefono";
+								Leer telefono4;
+							SiNo
+								Si ("" = placa5)  Entonces
+									Escribir "Digite la placa";
+									Leer placa5;
+									Escribir "Digite la marca del vehiculo";
+									Leer marca5;
+									Escribir "Digite el nombre del propietario";
+									Leer nombre5;
+									Escribir "Digite el número de telefono";
+									Leer telefono5;
+									
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+				FinSi
+			2:
+				Escribir "Indique la placa del vehiculo a retirar";
+				Leer consulta;
+				Si consulta = placa1 Entonces
+					Escribir "Gracias por usar nuestros servicios";
+					placa1 <- "";
+					marca1 <- "";
+					nombre1 <- "";
+					telefono1 <- "";
+				FinSi
+				Si consulta = placa2 Entonces
+					Escribir "Gracias por usar nuestros servicios";
+					placa2 <- "";
+					marca2 <- "";
+					nombre2 <- "";
+					telefono2 <- "";
+				FinSi
+				Si consulta = placa3 Entonces
+					Escribir "Gracias por usar nuestros servicios";
+					placa3 <- "";
+					marca3 <- "";
+					nombre3 <- "";
+					telefono3 <- "";
+				FinSi
+				Si consulta = placa4 Entonces
+					Escribir "Gracias por usar nuestros servicios";
+					placa4 <- "";
+					marca4 <- "";
+					nombre4 <- "";
+					telefono4 <- "";
+				FinSi
+				Si consulta = placa5 Entonces
+					Escribir "Gracias por usar nuestros servicios";
+					placa5 <- "";
+					marca5 <- "";
+					nombre5 <- "";
+					telefono5 <- "";
+				FinSi
+				Si (consulta <> placa1) Y (consulta <> placa2) Y (consulta <> placa3) Y (consulta <> placa4) Y (consulta <> placa5) Entonces
+					Escribir "";
+					Escribir "El vehiculo con está placa no se encuentra en el parqueadero";
+					Escribir "";
+				FinSi
+			3:
+				Escribir "Indique la placa del vehiculo a consultar";
+				Leer consulta;
+				Si consulta = placa1 Entonces
+					Escribir "El vehiculo se encuentra en la plaza numero 1";
+					Escribir "Datos del vehiculo";
+					Escribir "Placa : ",placa1;
+					Escribir "Marca : ",marca1;
+					Escribir "Nombre del propietario : ",nombre1;
+					Escribir "Telefono : ",telefono1;
+				FinSi
+				Si consulta = placa2 Entonces
+					Escribir "El vehiculo se encuentra en la plaza numero 2";
+					Escribir "Datos del vehiculo";
+					Escribir "Placa : ",placa2;
+					Escribir "Marca : ",marca2;
+					Escribir "Nombre del propietario : ",nombre2;
+					Escribir "Telefono : ",telefono2;
+				FinSi
+				Si consulta = placa3 Entonces
+					Escribir "El vehiculo se encuentra en la plaza numero 3";
+					Escribir "Datos del vehiculo";
+					Escribir "Placa : ",placa3;
+					Escribir "Marca : ",marca3;
+					Escribir "Nombre del propietario : ",nombre3;
+					Escribir "Telefono : ",telefono3;
+				FinSi
+				Si consulta = placa4 Entonces
+					Escribir "El vehiculo se encuentra en la plaza numero 4";
+					Escribir "Datos del vehiculo";
+					Escribir "Placa : ",placa4;
+					Escribir "Marca : ",marca4;
+					Escribir "Nombre del propietario : ",nombre4;
+					Escribir "Telefono : ",telefono4;
+				FinSi
+				Si consulta = placa5 Entonces
+					Escribir "El vehiculo se encuentra en la plaza numero 5";
+					Escribir "Datos del vehiculo";
+					Escribir "Placa : ",placa5;
+					Escribir "Marca : ",marca5;
+					Escribir "Nombre del propietario : ",nombre5;
+					Escribir "Telefono : ",telefono5;
+				FinSi
+				Si (consulta <> placa1) Y (consulta <> placa2) Y (consulta <> placa3) Y (consulta <> placa4) Y (consulta <> placa5) Entonces
+					Escribir "";
+					Escribir "El vehiculo con está placa no se encuentra en el parqueadero";
+					Escribir "";
+				FinSi			
+		FinSegun	
+	Hasta Que seleccion = 4
+FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<p class="texto">
+    <br><br><b>8.</b> La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.<br><br>
+</p>
+<pre>
+    Proceso sin_titulo
+	Definir seleccion Como Entero;
+	Definir usuario1,usuario2,usuario3,usuario4,usuario5,usuario6,usuario7,usuario8 Como Caracter;
+	Definir est1,est2,est3,est4,est5,est6,est7,est8 Como Caracter;
+	Definir consulta Como Caracter;
+	usuario1<-"";
+	usuario2<-"";
+	usuario3<-"";
+	usuario4<-"";
+	usuario5<-"";
+	usuario6<-"";
+	usuario7<-"";
+	usuario8<-"";
+	Repetir 
+		Escribir "Bienvenidos a la escuela automovilística El maestro ";
+		Escribir "Menú de usuario";
+		Escribir "1. Registrar ingreso al curso";
+		Escribir "2. Consultar usuarios que han presentado el curso";
+		Escribir "3. Resultados de la prueba";
+		Escribir "4. Salir de la aplicación";
+		Leer seleccion;
+		Segun seleccion Hacer
+			1:
+				Si ("" = usuario1)  Entonces
+					Escribir "Digite el nombre del estudiante";
+					Leer usuario1;
+					Escribir "Digite el estado del estudiante (APROBADO  O NO APROBRADO)";
+					Leer est1;
+					SiNo
+						Si ("" = usuario2)  Entonces
+							Escribir "Digite el nombre del estudiante";
+							Leer usuario2;
+							Escribir "Digite el estado del estudiante (APROBADO  O NO APROBRADO)";
+							Leer est2;
+						SiNo
+							Si ("" = usuario3)  Entonces
+								Escribir "Digite el nombre del estudiante";
+								Leer usuario3;
+								Escribir "Digite el estado del estudiante (APROBADO  O NO APROBRADO)";
+								Leer est3;
+							SiNo
+								Si ("" = usuario4)  Entonces
+									Escribir "Digite el nombre del estudiante";
+									Leer usuario4;
+									Escribir "Digite el estado del estudiante (APROBADO  O NO APROBRADO)";
+									Leer est4;
+								SiNo
+									Si ("" = usuario5)  Entonces
+										Escribir "Digite el nombre del estudiante";
+										Leer usuario5;
+										Escribir "Digite el estado del estudiante (APROBADO  O NO APROBRADO)";
+										Leer est5;
+									SiNo
+										Si ("" = usuario6)  Entonces
+											Escribir "Digite el nombre del estudiante";
+											Leer usuario6;
+											Escribir "Digite el estado del estudiante (APROBADO  O NO APROBRADO)";
+											Leer est6;
+										SiNo
+											Si ("" = usuario7)  Entonces
+												Escribir "Digite el nombre del estudiante";
+												Leer usuario7;
+												Escribir "Digite el estado del estudiante (APROBADO  O NO APROBRADO)";
+												Leer est7;
+											SiNo
+												Si ("" = usuario8)  Entonces
+													Escribir "Digite el nombre del estudiante";
+													Leer usuario8;
+													Escribir "Digite el estado del estudiante (APROBADO  O NO APROBRADO)";
+													Leer est8;
+												SiNo
+													Escribir "";
+													Escribir "Lista de estudiantes llena";
+													Escribir "";
+												
+												FinSi	
+											FinSi	
+										FinSi	
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+			3:
+				Escribir "";
+				Si ("" <> usuario1)  Entonces
+					Escribir "Estudiante : ",usuario1," ,estado : ",est1;
+				FinSi
+				Si ("" <> usuario2)  Entonces
+					Escribir "Estudiante : ",usuario2," ,estado : ",est2;
+				FinSi	
+				Si ("" <> usuario3)  Entonces
+					Escribir "Estudiante : ",usuario3," ,estado : ",est3;
+				FinSi
+				Si ("" <> usuario4)  Entonces
+					Escribir "Estudiante : ",usuario4," ,estado : ",est4;
+				FinSi
+				Si ("" <> usuario5)  Entonces
+					Escribir "Estudiante : ",usuario5," ,estado : ",est5;
+				FinSi
+				Si ("" <> usuario6)  Entonces
+					Escribir "Estudiante : ",usuario6," ,estado : ",est6;
+				FinSi
+				Si ("" <> usuario7)  Entonces
+					Escribir "Estudiante : ",usuario7," ,estado : ",est7;
+				FinSi
+				Si ("" <> usuario8)  Entonces
+					Escribir "Estudiante : ",usuario8," ,estado : ",est8;
+				FinSi	
+				Escribir "";
+			2:	
+				Escribir "";
+				Escribir "Lista de estudiantes : ";
+				Si ("" <> usuario1)  Entonces
+					Escribir " ",usuario1;
+				FinSi
+				Si ("" <> usuario2)  Entonces
+					Escribir " ",usuario2;
+				FinSi
+				Si ("" <> usuario3)  Entonces
+					Escribir " ",usuario3;
+				FinSi
+				Si ("" <> usuario4)  Entonces
+					Escribir " ",usuario4;
+				FinSi
+				Si ("" <> usuario5) Entonces
+					Escribir " ",usuario5;
+				FinSi
+				Si ("" <> usuario6)  Entonces
+					Escribir " ",usuario6;
+				FinSi
+				Si ("" <> usuario7)  Entonces
+					Escribir " ",usuario7;
+				FinSi
+				Si ("" <> usuario8)  Entonces
+					Escribir " ",usuario8;
+				FinSi	
+				Escribir "";
+			De Otro Modo:
+				Escribir "";
+				Escribir "Opción invalida intentelo nuevamente";
+				Escribir "";
+		FinSegun
+	Hasta Que seleccion = 4
+   FinProceso
+</pre>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+
+
+<p class="texto">
+    Adicionalmente en este video se puede ver el funcionamiento de los ejercicios explicado en video. <br>
+</p>
+<div class="video"><iframe class="multimedia" width="420" height="315" src="https://www.youtube.com/embed/9dV09JKhsuI?controls=0"
+    ></div>
+</iframe>
+<br><br>
+<a href="https://github.com/Stiven199/TalleresSofka/tree/taller3" target="_blank" rel="noopener noreferrer"  >
+	<div class="caja" ><button class="button button2" >Link repositorio</button>
+	</div>
+</a>
+
+</body>
+</html>
