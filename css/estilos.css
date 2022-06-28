@@ -69,7 +69,7 @@ ul {
   }
   pre {
     display: flex;
-    padding: 0px;
+    padding: 5px 5px 5px;
     margin: 0 0 0px;
     font-size: 12px;
     line-height: 18px;
@@ -77,7 +77,7 @@ ul {
     word-wrap: break-word;
     white-space: pre;
     white-space: pre-wrap;
-    background-color: #bab5f7;
+    background-color: #4781ff;
     border: 1px solid #cccccc;
     border: 1px solid rgba(0,0,0,0.15);
     -webkit-border-radius: 4px;
@@ -86,6 +86,7 @@ ul {
     justify-content: center;
     width: max-content;
     position: absolute;
+    border-radius: 4%;
 
   left: 50%;
   transform: translate(-50%, 0%);
@@ -175,4 +176,17 @@ h5{
 }
 a{
   text-decoration: none;
+}
+h4{
+  font-family: 'Kavoon', cursive;
+  font-size: 40px;
+  color: #025feb;
+  text-align: left;
+  -webkit-text-stroke: 1px black;
+  border-color: black;
+  text-shadow: 1px 1px 10px #025feb;
+  animation-duration: 2s;
+  animation-name: cambiocolor2;
+  animation-iteration-count: infinite; 
+  text-align: justify;
 }
